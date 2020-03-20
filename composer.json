@@ -1,0 +1,37 @@
+{
+  "name": "joshmoreno/html",
+  "description": "A Laravel Nova field for rendering custom html on index, detail, and forms.",
+  "keywords": [
+    "laravel",
+    "nova",
+    "field",
+    "html"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Moreno",
+      "email": "josh@joshmoreno.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoshMoreno\\Html\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JoshMoreno\\Html\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
