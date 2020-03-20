@@ -1,5 +1,5 @@
 {
-  "name": "joshmoreno/html",
+  "name": "joshmoreno/nova-html-field",
   "description": "A Laravel Nova field for rendering custom html on index, detail, and forms.",
   "keywords": [
     "laravel",
