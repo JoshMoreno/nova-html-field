@@ -28,6 +28,13 @@ composer require joshmoreno/nova-html-field
     ->view('fields.example'),
 ```
 
+```blade
+<div class="px-8 py-6 border-b border-40">
+    <h1 class="mb-2">Custom Html</h1>
+    <p>This is all custom html!</p>
+</div>
+```
+
 ### View with access to model attributes
 ```php
 \JoshMoreno\Html\Html::make('Some Title')
@@ -36,4 +43,11 @@ composer require joshmoreno/nova-html-field
                  ->with('name', $this->name)
                  ->render();
     }),
+```
+
+```blade
+<div class="px-8 py-6 border-b border-40">
+    <h1 class="mb-2">Hi {{$name}}</h1>
+    <p>This is all custom html with data!</p>
+</div>
 ```
