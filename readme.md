@@ -2,28 +2,34 @@
 
 A nova field for rendering html on all resource pages: index, detail, and forms. This is hopefully a temporary solution until nova supports computed fields on forms.
 
-##Install
+## Install
 ```
 composer require joshmoreno/nova-html-field
 ```
 
 ## Usage
+### Inline string
 ```php
-// via a string of html
 \JoshMoreno\Html\Html::make('Some Title')
     ->view('<h1>Example</h1>'),
+```
 
-// via a closure
+### Closure
+```php
 \JoshMoreno\Html\Html::make('Some Title')
     ->html(function() {
         return "<h1>$this->name</h1>";
     }),
+```
 
-// via a view
+### View
+```php
 \JoshMoreno\Html\Html::make('Some Title')
     ->view('fields.example'),
+```
 
-// via a view with data
+### View with access to model attributes
+```php
 \JoshMoreno\Html\Html::make('Some Title')
     ->html(function() {
         return view('fields.example')
