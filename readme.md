@@ -11,7 +11,7 @@ composer require joshmoreno/nova-html-field
 ### Inline string
 ```php
 \JoshMoreno\Html\Html::make('Some Title')
-    ->view('<h1>Example</h1>'),
+    ->html('<h1>Example</h1>'),
 ```
 
 ### Closure
