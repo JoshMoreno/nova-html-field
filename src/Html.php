@@ -3,16 +3,17 @@
 namespace JoshMoreno\Html;
 
 use Laravel\Nova\Fields\Field;
+use Illuminate\Support\Str;
 
 class Html extends Field
 {
-    public $component = 'html';
+    public $component = 'nova-html-field';
 
     public function __construct($name)
     {
         parent::__construct($name, null, null);
 
-        $this->attribute = 'HtmlComputedField';
+        $this->attribute = Str::random(16);
     }
 
     /**
