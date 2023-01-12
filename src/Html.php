@@ -3,9 +3,12 @@
 namespace JoshMoreno\Html;
 
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\SupportDependantFields;
 
 class Html extends Field
 {
+    use SupportDependantFields;
+    
     public $component = 'html';
 
     public function __construct($name)
