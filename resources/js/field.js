@@ -1,5 +1,5 @@
-Nova.booting((Vue, router, store) => {
-  Vue.component('html', require('./components/Field'))
-  Vue.component('detail-html', require('./components/Field'))
-  Vue.component('form-html', require('./components/Field'))
+Nova.booting((Vue) => {
+    Vue.component('index-nova-html-field', require('./components/Field').default)
+    Vue.component('detail-nova-html-field', require('./components/Field').default)
+    Vue.component('form-nova-html-field', require('./components/Field').default)
 })
